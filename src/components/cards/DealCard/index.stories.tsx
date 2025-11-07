@@ -15,7 +15,7 @@ const meta: Meta<typeof DealCard> = {
     docs: {
         description: {
         component:
-          `Cartão de oferta de planos/serviços com título, subtítulo, preço atual e antigo, lista de recursos e botão de ação.\n\n` +
+          `Cartão de oferta de planos/Clientes com título, subtítulo, preço atual e antigo, lista de recursos e botão de ação.\n\n` +
           `### Props principais\n` +
           `- **title**: título do plano/serviço\n` +
           `- **subtitle?**: subtítulo do plano/serviço\n` +

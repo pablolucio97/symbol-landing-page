@@ -16,7 +16,7 @@ const meta: Meta<typeof ItemListCard> = {
         component:
           `Cartão simples para listas (features, benefícios, tópicos) com ícone, título e descrição.\n\n` +
           `### Uso no mercado brasileiro\n` +
-          `Ideal para destacar benefícios de planos, módulos de sistemas (ERP, CRM), diferenciais de serviços e tópicos de landing pages.\n\n` +
+          `Ideal para destacar benefícios de planos, módulos de sistemas (ERP, CRM), diferenciais de Clientes e tópicos de landing pages.\n\n` +
           `### Props principais\n` +
           `- **icon**: nó React do ícone (ex.: <RocketLaunchIcon />)\n` +
           `- **title**: título do item\n` +

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { HeroSection } from ".";
-import bgImage from "../../../assets/bg-test.jpg";
 // import bgImage from "../../assets/bg-test.jpg";
 
 const meta: Meta<typeof HeroSection> = {
@@ -33,20 +32,6 @@ export const Default: Story = {
     titleClassName: "text-4xl font-bold mb-8 text-white",
     subtitleClassName: "text-2xl text-white mb-8",
     buttonClassName: "text-white text-lg font-semibold hover:bg-primary-600",
-  },
-};
-
-export const WithBackgroundImage: Story = {
-  args: {
-    size: "full",
-    title: "Seção com imagem de fundo",
-    subtitle: "Testando imagem local como background.",
-    buttonText: "Saiba mais",
-    backgroundImageLocalPath: bgImage,
-    titleClassName:
-      "text-4xl font-bold mb-4 bg-clip-text bg-gradient-to-r from-green-400 via-yellow-400 to-blue-400",
-    subtitleClassName: "text-2xl mb-4 text-gray-600",
-    buttonClassName: "bg-primary-500 text-white hover:bg-primary-600",
   },
 };
 

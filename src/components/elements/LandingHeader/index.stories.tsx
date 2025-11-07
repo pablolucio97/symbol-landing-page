@@ -53,7 +53,7 @@ export const Default: Story = {
                 target="_blank"
                 href="https://www.google.com"
               >
-                Serviços
+                Clientes
               </LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Depoimentos</LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Trabalhe conosco</LandingHeader.Nav.Item>
@@ -71,7 +71,7 @@ export const Default: Story = {
                 target="_blank"
                 href="https://www.google.com"
               >
-                Serviços
+                Clientes
               </LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Depoimentos</LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Trabalhe conosco</LandingHeader.Nav.Item>
@@ -121,7 +121,7 @@ export const MobileOnly: Story = {
           <LandingHeader.Center>
             <LandingHeader.Nav>
               <LandingHeader.Nav.Item>Produtos</LandingHeader.Nav.Item>
-              <LandingHeader.Nav.Item>Serviços</LandingHeader.Nav.Item>
+              <LandingHeader.Nav.Item>Clientes</LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Depoimentos</LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Contato</LandingHeader.Nav.Item>
             </LandingHeader.Nav>
@@ -130,7 +130,7 @@ export const MobileOnly: Story = {
             <LandingHeader.MobileMenuToggle open={open} onToggle={setOpen as never} />
             <LandingHeader.MobileMenuPanel open={open}>
               <LandingHeader.Nav.Item>Produtos</LandingHeader.Nav.Item>
-              <LandingHeader.Nav.Item>Serviços</LandingHeader.Nav.Item>
+              <LandingHeader.Nav.Item>Clientes</LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Depoimentos</LandingHeader.Nav.Item>
               <LandingHeader.Nav.Item>Contato</LandingHeader.Nav.Item>
             </LandingHeader.MobileMenuPanel>

@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
 import {
   FacebookLogoIcon,
   InstagramLogoIcon,
+  LinkedinLogoIcon,
   RedditLogoIcon,
   TiktokLogoIcon,
   TwitchLogoIcon,
@@ -23,6 +24,7 @@ type item = {
     | "youtube"
     | "reddit"
     | "whatsapp"
+    | "linkedin"
     | "custom";
   /** Link do ícone */
   href: string;
@@ -98,6 +100,11 @@ export default function SocialRibbon({
                   className={clsx("w-5 h-5 sm:w-7 sm:h-7", iconsClassName)}
                   weight={iconsWeight}
                 />
+              ) : item.iconName === "linkedin" ? (
+                <LinkedinLogoIcon
+                  className={clsx("w-5 h-5 sm:w-7 sm:h-7", iconsClassName)}
+                  weight={iconsWeight}
+                />
               ) : (
                 item.icon
               )}
@@ -108,5 +115,3 @@ export default function SocialRibbon({
     </div>
   );
 }
-
-

@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import Image from "next/image";
 
 interface ImageCardProps {
@@ -11,6 +12,7 @@ interface ImageCardProps {
   description?: string;
   /** Função chamada ao clicar em "Ver Detalhes" (opcional). */
   onSeeDetails?: () => void;
+  className?: string;
 }
 
 /**
@@ -22,6 +24,7 @@ export default function ImageCard({
   title,
   description,
   onSeeDetails,
+  className,
 }: ImageCardProps) {
   const handleSeeDetails = () => {
     if (onSeeDetails) {
@@ -31,10 +34,10 @@ export default function ImageCard({
 
   return (
     <div
-      className="
-        flex flex-col items-center text-center border-border-card border bg-bg-card 
-         gap-4 shadow-md rounded-lg p-4 max-w-sm mx-auto
-      "
+      className={clsx(
+        "flex flex-col items-center text-center border-border-card border bg-bg-card gap-4 shadow-md rounded-lg p-4 max-w-sm mx-auto",
+        className
+      )}
     >
       {/* Imagem */}
       <Image

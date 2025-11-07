@@ -75,12 +75,12 @@ export default function BrandMarquee({
         </h3>
       )}
 
-      <div className="relative w-full overflow-hidden bg-background">
+      <div className="relative w-full overflow-hidden bg-white rounded-lg">
         {/* Overlays de fade que acompanham o tema (não dependem do lib) */}
         {showEdgeFade && (
           <>
-            <div className="w-[10vw] pointer-events-none absolute inset-y-0 left-0 z-10 bg-gradient-to-r from-background to-transparent" />
-            <div className="w-[10vw] pointer-events-none absolute inset-y-0 right-0 z-10 bg-gradient-to-l from-background to-transparent" />
+            <div className="w-[10vw] pointer-events-none absolute inset-y-0 left-0 z-10 bg-gradient-to-r from-white to-transparent" />
+            <div className="w-[10vw] pointer-events-none absolute inset-y-0 right-0 z-10 bg-gradient-to-l from-white to-transparent" />
           </>
         )}
 
