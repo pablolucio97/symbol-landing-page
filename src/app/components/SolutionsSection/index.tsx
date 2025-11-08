@@ -4,13 +4,14 @@ import Button from "@/components/buttons/Button";
 import InfoCard from "@/components/cards/InfoCard";
 import Subtitle from "@/components/typography/Subtitle";
 import Title from "@/components/typography/Title";
+import { handleStartWhatsAppConversation } from "@/utils/whatsapp";
 import {
+  CopySimpleIcon,
   FunnelSimpleIcon,
   InstagramLogoIcon,
   PresentationChartIcon,
   ShareNetworkIcon,
   TrendUpIcon,
-  CopySimpleIcon,
 } from "@phosphor-icons/react";
 
 export default function SolutionsSection() {
@@ -25,6 +26,7 @@ export default function SolutionsSection() {
           <Button
             label="Fale com um Especialista"
             className="bg-primary-500 text-white font-bold"
+            onClick={handleStartWhatsAppConversation}
           />
         </div>
       ),
@@ -39,6 +41,7 @@ export default function SolutionsSection() {
           <Button
             label="Fale com um Especialista"
             className="bg-primary-500 text-white font-bold"
+            onClick={handleStartWhatsAppConversation}
           />
         </div>
       ),
@@ -53,6 +56,7 @@ export default function SolutionsSection() {
           <Button
             label="Fale com um Especialista"
             className="bg-primary-500 text-white font-bold"
+            onClick={handleStartWhatsAppConversation}
           />
         </div>
       ),
@@ -67,6 +71,7 @@ export default function SolutionsSection() {
           <Button
             label="Fale com um Especialista"
             className="bg-primary-500 text-white font-bold"
+            onClick={handleStartWhatsAppConversation}
           />
         </div>
       ),
@@ -81,6 +86,7 @@ export default function SolutionsSection() {
           <Button
             label="Fale com um Especialista"
             className="bg-primary-500 text-white font-bold"
+            onClick={handleStartWhatsAppConversation}
           />
         </div>
       ),
@@ -95,6 +101,7 @@ export default function SolutionsSection() {
           <Button
             label="Fale com um Especialista"
             className="bg-primary-500 text-white font-bold"
+            onClick={handleStartWhatsAppConversation}
           />
         </div>
       ),

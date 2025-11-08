@@ -2,6 +2,7 @@
 import ZoomContainer from "@/components/animations-and-loading/ZoomContainer";
 import Button from "@/components/buttons/Button";
 import Title from "@/components/typography/Title";
+import { handleStartWhatsAppConversation } from "@/utils/whatsapp";
 
 export default function ContactSection() {
   return (
@@ -14,6 +15,7 @@ export default function ContactSection() {
         <Button
           label="Fale com um Especialista"
           className="bg-primary-500 text-white font-bold"
+          onClick={handleStartWhatsAppConversation}
         />
       </ZoomContainer>
     </section>

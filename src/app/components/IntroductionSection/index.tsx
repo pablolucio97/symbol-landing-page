@@ -16,14 +16,34 @@ export default function IntroductionSection() {
           <RevealContainer once>
             <Paragraph
               content="Somos especialistas em Growth Marketing, CRM Chat Bot para o time Comercial e Produtora Audio Visual, oferecendo estratégias personalizadas para impulsionar o sucesso da sua empresa."
-              className="text-center"
+              className="text-base sm:text-lg"
             />
           </RevealContainer>
           <RevealContainer once>
-            <Paragraph
+            <div>
+              <span className="text-foreground text-base sm:text-lg">
+                Se você busca um parceiro comprometido com seu{" "}
+                <strong className="text-primary-500 text-base sm:text-lg">
+                  sucesso
+                </strong>
+                , entre em contato com o{" "}
+                <strong className="text-primary-500 text-base sm:text-lg">
+                  Grupo Symbol Digital
+                </strong>{" "}
+                hoje mesmo. Estamos prontos para{" "}
+                <strong className="text-primary-500 text-base sm:text-lg">
+                  impulsionar seu crescimento
+                </strong>{" "}
+                e ajudar a escrever sua próxima{" "}
+                <strong className="text-primary-500 text-base sm:text-lg">
+                  história de sucesso!
+                </strong>
+              </span>
+            </div>
+            {/* <Paragraph
               content="Se você busca um parceiro comprometido com seu sucesso, entre em contato com o Grupo Symbol Digital hoje mesmo. Estamos prontos para impulsionar seu crescimento e ajudar a escrever sua próxima história de sucesso!"
               className="text-center"
-            />
+            /> */}
           </RevealContainer>
         </div>
         <div className="w-full lg:w-1/3 flex justify-center">

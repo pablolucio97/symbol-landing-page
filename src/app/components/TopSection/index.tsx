@@ -1,5 +1,6 @@
 "use client";
 import { TextFade } from "@/components/animations-and-loading/TextFade";
+import { handleStartWhatsAppConversation } from "@/utils/whatsapp";
 import { loadFirePreset } from "@tsparticles/preset-fire";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useState } from "react";
@@ -20,9 +21,6 @@ export default function TopSection() {
     }).then(() => setInit(true));
   }, []);
 
-  const handleNavigateToContact = () => {
-    document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <div className="relative w-[100vw] h-[72vh] overflow-hidden flex items-center justify-center bg-gradient-to-b from-primary-700 via-primary-900 to-black">
@@ -67,8 +65,8 @@ export default function TopSection() {
           fadeMs={700} // 0.7s fade
         />
         <button
-          className="w-fit rounded-md px-5 py-3 bg-primary-500 text-white font-semibold shadow-lg hover:bg-emerald-600 transition mt-4"
-          onClick={handleNavigateToContact}
+          className="w-fit rounded-md px-5 py-3 bg-primary-500 text-white font-semibold shadow-lg hover:bg-primary-600 transition mt-4"
+          onClick={handleStartWhatsAppConversation}
         >
           Fale com um Especialista
         </button>

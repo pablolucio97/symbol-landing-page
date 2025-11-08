@@ -106,7 +106,7 @@
 
 /* Class override so a `.dark` class wins regardless of system */
 :root.dark {
-  --color-background: #111111;
+  --color-background: #000000;
   --color-foreground: #FFFEFC;
   --color-bg-card: #222222;
   --color-border-card: #444444;
