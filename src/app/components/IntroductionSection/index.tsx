@@ -1,5 +1,6 @@
 import FadeContainer from "@/components/animations-and-loading/FadeContainer";
 import RevealContainer from "@/components/animations-and-loading/RevealContainer";
+import ScrollButton from "@/components/buttons/ScrollButton";
 import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
 import Image from "next/image";
@@ -63,6 +64,7 @@ export default function IntroductionSection() {
           </FadeContainer>
         </div>
       </div>
+      <ScrollButton />
     </section>
   );
 }
